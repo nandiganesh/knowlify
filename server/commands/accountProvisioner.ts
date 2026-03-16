@@ -299,7 +299,7 @@ async function provisionFirstCollection(
       "Integrations & API",
       "Our Editor",
       "Getting Started",
-      "What is Outline",
+      "What is Knowlify",
     ];
 
     for (const title of onboardingDocs) {

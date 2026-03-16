@@ -1,6 +1,6 @@
 # Backend Services
 
-Outline's backend is split into several distinct [services](../server/services)
+Knowlify's backend is split into several distinct [services](../server/services)
 that combined form the application. When running the official Docker container
 it will run all of the production services by default.
 

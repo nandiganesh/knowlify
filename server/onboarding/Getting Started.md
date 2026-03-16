@@ -1,8 +1,8 @@
-Some ideas to get you and your team started with learning the basics of Outline, feel free to check them off as you go!
+Some ideas to get you and your team started with learning the basics of Knowlify, feel free to check them off as you go!
 
 ## Learn the basics
 
-- [x] Create an Outline account
+- [x] Create a Knowlify account
 - [ ] **Create a collection** from the left sidebar
 - [ ] **Create a new doc** from the top right of home or any collection
 - [ ] Try drag and drop to nest and move documents
@@ -14,4 +14,4 @@ Some ideas to get you and your team started with learning the basics of Outline,
 - [ ] Setup the [Slack integration](/settings/integrations/slack)
 - [ ] **Create a template** to share a writing structure with your team
 - [ ] Create a check list to track tasks
-- [ ] Try embedding a supported [integration](https://www.getoutline.com/integrations)
+- [ ] Try embedding a supported [integration](https://www.knowlify.app/integrations)

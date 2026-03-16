@@ -1,0 +1,22 @@
+{
+  "production": {
+    "username": "user",
+    "password": "pass",
+    "database": "outline",
+    "host": "postgres",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": false
+    }
+  },
+  "development": {
+    "username": "user",
+    "password": "pass",
+    "database": "outline",
+    "host": "postgres",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": false
+    }
+  }
+}

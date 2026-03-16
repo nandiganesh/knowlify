@@ -1352,8 +1352,8 @@ export const examples: Example[] = [
             {
               type: "image",
               attrs: {
-                src: "https://www.getoutline.com/images/screenshot.png",
-                alt: "Outline",
+                src: "https://www.knowlify.app/images/screenshot.png",
+                alt: "Knowlify",
               },
             },
           ],

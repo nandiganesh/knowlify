@@ -86,20 +86,20 @@ if (env.GOOGLE_CLIENT_ID && env.GOOGLE_CLIENT_SECRET) {
               ],
             });
 
-            // Users cannot create a team with personal gmail accounts
-            if (!userExists) {
-              throw GmailAccountCreationError();
-            }
+            // BYPASSED: Allow personal Gmail accounts to create a workspace for testing
+            // if (!userExists) {
+            //   throw GmailAccountCreationError();
+            // }
 
-            // To log-in with a personal account, users must specify a team subdomain
-            throw TeamDomainRequiredError();
+            // throw TeamDomainRequiredError();
           }
 
           // remove the TLD and form a subdomain from the remaining
           // subdomains of the form "foo.bar.com" are allowed as primary Google Workspaces domains
           // see https://support.google.com/nonprofits/thread/19685140/using-a-subdomain-as-a-primary-domain
-          const subdomain = domain ? slugifyDomain(domain) : "";
-          const teamName = capitalize(subdomain);
+          const defaultSubdomain = profile.email.split("@")[0];
+          const subdomain = domain ? slugifyDomain(domain) : slugifyDomain(defaultSubdomain);
+          const teamName = domain ? capitalize(subdomain) : capitalize(defaultSubdomain) + " Workspace";
 
           // Request a larger size profile picture than the default by tweaking
           // the query parameter.

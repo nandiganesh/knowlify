@@ -32,7 +32,7 @@ const DesktopRedirect = () => {
       <Heading centered>{t("Signing in")}…</Heading>
       <Note>
         {t(
-          "You can safely close this window once the Outline desktop app has opened"
+          "You can safely close this window once the Knowlify desktop app has opened"
         )}
         .
       </Note>

@@ -1,10 +1,10 @@
 # Architecture
 
-Outline is composed of a backend and frontend codebase in this monorepo. As both are written in TypeScript, they share some code where possible. We utilize the latest ES6 language features, including `async`/`await`, and types. Prettier formatting and Oxlint are enforced by CI.
+Knowlify is composed of a backend and frontend codebase in this monorepo. As both are written in TypeScript, they share some code where possible. We utilize the latest ES6 language features, including `async`/`await`, and types. Prettier formatting and Oxlint are enforced by CI.
 
 ## Frontend
 
-Outline's frontend is a React application compiled with [Vite](https://vitejs.dev/). It uses [MobX](https://mobx.js.org/) for state management and [Styled Components](https://www.styled-components.com/) for component styles. Unless global, state logic and styles are always co-located with React components together with their subcomponents to make the component tree easier to manage.
+Knowlify's frontend is a React application compiled with [Vite](https://vitejs.dev/). It uses [MobX](https://mobx.js.org/) for state management and [Styled Components](https://www.styled-components.com/) for component styles. Unless global, state logic and styles are always co-located with React components together with their subcomponents to make the component tree easier to manage.
 
 ```
 app
@@ -26,7 +26,7 @@ app
 The API server is driven by [Koa](http://koajs.com/), it uses [Sequelize](http://docs.sequelizejs.com/) as the ORM and Redis with [Bull](https://github.com/OptimalBits/bull) for queues and async event management. Authorization logic
 is contained in [cancan](https://www.npmjs.com/package/cancan) policies under the "policies" directory.
 
-Interested in more documentation on the API routes? Check out the [API documentation](https://getoutline.com/developers).
+Interested in more documentation on the API routes? Check out the [API documentation](https://getKnowlify.com/developers).
 
 ```
 server

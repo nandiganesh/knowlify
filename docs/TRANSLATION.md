@@ -1,6 +1,6 @@
 # Translation
 
-Outline is localized through community contributions. The text in Outline's user interface is in American English by default, we're very thankful for all help that the community provides bringing the app to different languages.
+Knowlify is localized through community contributions. The text in Knowlify's user interface is in American English by default, we're very thankful for all help that the community provides bringing the app to different languages.
 
 ## Externalizing strings
 
@@ -12,7 +12,7 @@ PR's are accepted for wrapping English strings in the codebase that were not pre
 
 ## Translating strings
 
-To manage the translation process we use [CrowdIn](https://translate.getoutline.com/), it keeps track of which strings in which languages still need translating, synchronizes with the codebase automatically, and provides a great editor interface.
+To manage the translation process we use [CrowdIn](https://translate.getKnowlify.com/), it keeps track of which strings in which languages still need translating, synchronizes with the codebase automatically, and provides a great editor interface.
 
 You'll need to create a free account to use CrowdIn. Once you have joined, you can provide translations by following these steps:
 
@@ -25,10 +25,10 @@ You'll need to create a free account to use CrowdIn. Once you have joined, you c
 
 ## Proofreading
 
-Once a translation has been provided, a proof reader can approve the translation and mark it for use in Outline.
+Once a translation has been provided, a proof reader can approve the translation and mark it for use in Knowlify.
 
-If you are interested in becoming a proof reader, please contact one of the project managers in the Outline CrowdIn project or contact [@tommoor](https://github.com/tommoor). Similarly, if your language is not listed in the list of CrowdIn languages, please contact our project managers or [send us an email](https://www.getoutline.com/contact) so we can add your language.
+If you are interested in becoming a proof reader, please contact one of the project managers in the Knowlify CrowdIn project or contact [@tommoor](https://github.com/tommoor). Similarly, if your language is not listed in the list of CrowdIn languages, please contact our project managers or [send us an email](https://www.getKnowlify.com/contact) so we can add your language.
 
 ## Release
 
-Updated translations are automatically PR'd against the codebase by a bot and will be merged regularly so that new translations appear in the next release of Outline.
+Updated translations are automatically PR'd against the codebase by a bot and will be merged regularly so that new translations appear in the next release of Knowlify.

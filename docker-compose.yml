@@ -7,9 +7,25 @@ services:
   postgres:
     image: postgres
     ports:
-      - "127.0.0.1:5432:5432"
+      - "127.0.0.1:5433:5432"
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: pass
       POSTGRES_DB: outline
     user: "postgres:postgres"
+
+  outline:
+    image: outlinewiki/outline:latest
+    env_file: .env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      - PGSSLMODE=disable
+      - DATABASE_SSL=false
+      - APP_NAME=Knowlify
+    volumes:
+      - ./data:/var/lib/outline/data
+      - ./google-auth-patch.js:/opt/outline/build/plugins/google/server/auth/google.js

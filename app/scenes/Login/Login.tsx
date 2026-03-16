@@ -158,7 +158,7 @@ function Login({ children, onBack }: Props) {
           <Heading centered>{t("Almost there")}…</Heading>
           <Note>
             {t(
-              "Your custom domain is successfully pointing at Outline. To complete the setup process please contact support."
+              "Your custom domain is successfully pointing at Knowlify. To complete the setup process please contact support."
             )}
           </Note>
         </Centered>
@@ -188,7 +188,7 @@ function Login({ children, onBack }: Props) {
               pattern="^[a-z\d-]+$"
               required
             >
-              <Domain>.getoutline.com</Domain>
+              <Domain>.knowlify.app</Domain>
             </Input>
           </Flex>
           <ButtonLarge type="submit" fullwidth>

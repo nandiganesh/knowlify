@@ -93,8 +93,8 @@ export default () =>
           ],
         },
         manifest: {
-          name: "Outline",
-          short_name: "Outline",
+          name: "Knowlify",
+          short_name: "Knowlify",
           theme_color: "#fff",
           background_color: "#fff",
           start_url: "/",
