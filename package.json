@@ -372,7 +372,7 @@
     "prettier": "^3.6.2",
     "react-refresh": "^0.18.0",
     "rimraf": "^2.5.4",
-    "rollup-plugin-webpack-stats": "2.1.6",
+    "rollup-plugin-webpack-stats": "2.1.11",
     "terser": "^5.44.1",
     "typescript": "^5.9.2"
   },
