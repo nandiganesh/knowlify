@@ -3113,31 +3113,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dotenvx/dotenvx@npm:^1.51.2":
-  version: 1.51.2
-  resolution: "@dotenvx/dotenvx@npm:1.51.2"
+"@dotenvx/dotenvx@npm:^1.75.1":
+  version: 1.75.1
+  resolution: "@dotenvx/dotenvx@npm:1.75.1"
   dependencies:
+    "@dotenvx/primitives": "npm:^0.8.0"
     commander: "npm:^11.1.0"
+    conf: "npm:^10.2.0"
     dotenv: "npm:^17.2.1"
-    eciesjs: "npm:^0.4.10"
+    enquirer: "npm:^2.4.1"
+    env-paths: "npm:^2.2.1"
     execa: "npm:^5.1.1"
     fdir: "npm:^6.2.0"
     ignore: "npm:^5.3.0"
     object-treeify: "npm:1.1.33"
-    picomatch: "npm:^4.0.2"
+    open: "npm:^8.4.2"
+    picomatch: "npm:^4.0.4"
+    systeminformation: "npm:^5.22.11"
+    undici: "npm:^7.11.0"
     which: "npm:^4.0.0"
+    yocto-spinner: "npm:^1.1.0"
   bin:
     dotenvx: src/cli/dotenvx.js
-  checksum: 10c0/cb20d4b33a1917266374389dc911fd531a7455a8ac84b978a02ef1b436a3c87f893c364ed520efd33c34e9ca8bb783458b784c4a960413e4d58c044e4d8ff0a2
+  checksum: 10c0/982f9ae7e7dd447f01f232144f0e9d7dec2d1574c308c88bfd4924c5e5026ce77a60e519ada93e52b5a7b3e405410d541303947be5b47c67f0b366cec284bc10
   languageName: node
   linkType: hard
 
-"@ecies/ciphers@npm:^0.2.4":
-  version: 0.2.5
-  resolution: "@ecies/ciphers@npm:0.2.5"
-  peerDependencies:
-    "@noble/ciphers": ^1.0.0
-  checksum: 10c0/fcc08327216d225310596dc5d6a25da919e641e271c1895384e068fdd910e835271a103c5105aaa8ea24b33931b7d1975341b044919d38fd586e8ad8e0f33be6
+"@dotenvx/primitives@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "@dotenvx/primitives@npm:0.8.0"
+  checksum: 10c0/e0dfe65b9df534c753db2b1d0a426cbc27395a04eb2f143e0981a9669a6f444b17c984efdbc05c03e93c0fd002402372f2f6195a58dd2aa2a9669f8d6d1d6680
   languageName: node
   linkType: hard
 
@@ -4566,23 +4571,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@noble/ciphers@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "@noble/ciphers@npm:1.3.0"
-  checksum: 10c0/3ba6da645ce45e2f35e3b2e5c87ceba86b21dfa62b9466ede9edfb397f8116dae284f06652c0cd81d99445a2262b606632e868103d54ecc99fd946ae1af8cd37
-  languageName: node
-  linkType: hard
-
-"@noble/curves@npm:^1.9.7":
-  version: 1.9.7
-  resolution: "@noble/curves@npm:1.9.7"
-  dependencies:
-    "@noble/hashes": "npm:1.8.0"
-  checksum: 10c0/150014751ebe8ca06a8654ca2525108452ea9ee0be23430332769f06808cddabfe84f248b6dbf836916bc869c27c2092957eec62c7506d68a1ed0a624017c2a3
-  languageName: node
-  linkType: hard
-
-"@noble/hashes@npm:1.8.0, @noble/hashes@npm:^1.1.5, @noble/hashes@npm:^1.8.0":
+"@noble/hashes@npm:^1.1.5":
   version: 1.8.0
   resolution: "@noble/hashes@npm:1.8.0"
   checksum: 10c0/06a0b52c81a6fa7f04d67762e08b2c476a00285858150caeaaff4037356dd5e119f45b2a530f638b77a5eeca013168ec1b655db41bae3236cb2e9d511484fc77
@@ -9255,6 +9244,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ajv-formats@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "ajv-formats@npm:2.1.1"
+  dependencies:
+    ajv: "npm:^8.0.0"
+  peerDependencies:
+    ajv: ^8.0.0
+  peerDependenciesMeta:
+    ajv:
+      optional: true
+  checksum: 10c0/e43ba22e91b6a48d96224b83d260d3a3a561b42d391f8d3c6d2c1559f9aa5b253bfb306bc94bbeca1d967c014e15a6efe9a207309e95b3eaae07fcbcdc2af662
+  languageName: node
+  linkType: hard
+
 "ajv-formats@npm:^3.0.1, ajv-formats@npm:~3.0.1":
   version: 3.0.1
   resolution: "ajv-formats@npm:3.0.1"
@@ -9281,6 +9284,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ajv@npm:^8.6.3":
+  version: 8.20.0
+  resolution: "ajv@npm:8.20.0"
+  dependencies:
+    fast-deep-equal: "npm:^3.1.3"
+    fast-uri: "npm:^3.0.1"
+    json-schema-traverse: "npm:^1.0.0"
+    require-from-string: "npm:^2.0.2"
+  checksum: 10c0/5df9a1c8f83863cde1bd3a9ddb426f599718f88e3dc9153616c79fb28e0be455335830d7f21d745576519f057b371352daa31047b6a33d7036fe08777d60cf2a
+  languageName: node
+  linkType: hard
+
 "ajv@npm:~8.13.0":
   version: 8.13.0
   resolution: "ajv@npm:8.13.0"
@@ -9297,6 +9312,13 @@ __metadata:
   version: 1.0.1
   resolution: "amdefine@npm:1.0.1"
   checksum: 10c0/ba8aa5d4ff5248b2ed067111e72644b36b5b7ae88d9a5a2c4223dddb3bdc9102db67291e0b414f59f12c6479ac6a365886bac72c7965e627cbc732e0962dd1ab
+  languageName: node
+  linkType: hard
+
+"ansi-colors@npm:^4.1.1":
+  version: 4.1.3
+  resolution: "ansi-colors@npm:4.1.3"
+  checksum: 10c0/ec87a2f59902f74e61eada7f6e6fe20094a628dab765cfdbd03c3477599368768cffccdb5d3bb19a1b6c99126783a143b1fee31aab729b31ffe5836c7e5e28b9
   languageName: node
   linkType: hard
 
@@ -9509,6 +9531,13 @@ __metadata:
   version: 1.0.0
   resolution: "at-least-node@npm:1.0.0"
   checksum: 10c0/4c058baf6df1bc5a1697cf182e2029c58cd99975288a13f9e70068ef5d6f4e1f1fd7c4d2c3c4912eae44797d1725be9700995736deca441b39f3e66d8dee97ef
+  languageName: node
+  linkType: hard
+
+"atomically@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "atomically@npm:1.7.0"
+  checksum: 10c0/31f5efd5d69474681268557af4024f9e10223bb6b39fdedb5f2e19405186c4b76284fac9f6c43c9af75013cad6437e93b7168268f5ddb7aaf1cfc5fdb415f227
   languageName: node
   linkType: hard
 
@@ -10818,6 +10847,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"conf@npm:^10.2.0":
+  version: 10.2.0
+  resolution: "conf@npm:10.2.0"
+  dependencies:
+    ajv: "npm:^8.6.3"
+    ajv-formats: "npm:^2.1.1"
+    atomically: "npm:^1.7.0"
+    debounce-fn: "npm:^4.0.0"
+    dot-prop: "npm:^6.0.1"
+    env-paths: "npm:^2.2.1"
+    json-schema-typed: "npm:^7.0.3"
+    onetime: "npm:^5.1.2"
+    pkg-up: "npm:^3.1.0"
+    semver: "npm:^7.3.5"
+  checksum: 10c0/d608d8c54ba7fad368eac640e77f2ce0334ec27cfd62ac39f44e361af8af9915eaa6c2ada81fbc25c3219273d972b4868bc752e8e2116cb6e12d35df72dc25a4
+  languageName: node
+  linkType: hard
+
 "confbox@npm:^0.1.8":
   version: 0.1.8
   resolution: "confbox@npm:0.1.8"
@@ -11638,6 +11685,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"debounce-fn@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "debounce-fn@npm:4.0.0"
+  dependencies:
+    mimic-fn: "npm:^3.0.0"
+  checksum: 10c0/bcbd8eb253bdb6ee2f32759c95973c62bc479e74efbe1a44e17acfb0ea7d4bcbe615bf7e34aab80247ac08669c1ab72f7da0f384ceb7f15c18333d31d9030384
+  languageName: node
+  linkType: hard
+
 "debug@npm:4.3.4":
   version: 4.3.4
   resolution: "debug@npm:4.3.4"
@@ -11698,6 +11754,13 @@ __metadata:
     es-errors: "npm:^1.3.0"
     gopd: "npm:^1.0.1"
   checksum: 10c0/dea0606d1483eb9db8d930d4eac62ca0fa16738b0b3e07046cddfacf7d8c868bbe13fa0cb263eb91c7d0d527960dc3f2f2471a69ed7816210307f6744fe62e37
+  languageName: node
+  linkType: hard
+
+"define-lazy-prop@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "define-lazy-prop@npm:2.0.0"
+  checksum: 10c0/db6c63864a9d3b7dc9def55d52764968a5af296de87c1b2cc71d8be8142e445208071953649e0386a8cc37cfcf9a2067a47207f1eb9ff250c2a269658fdae422
   languageName: node
   linkType: hard
 
@@ -11920,6 +11983,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dot-prop@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "dot-prop@npm:6.0.1"
+  dependencies:
+    is-obj: "npm:^2.0.0"
+  checksum: 10c0/30e51ec6408978a6951b21e7bc4938aad01a86f2fdf779efe52330205c6bb8a8ea12f35925c2029d6dc9d1df22f916f32f828ce1e9b259b1371c580541c22b5a
+  languageName: node
+  linkType: hard
+
 "dotenv@npm:*, dotenv@npm:^17.2.1":
   version: 17.2.3
   resolution: "dotenv@npm:17.2.3"
@@ -12005,18 +12077,6 @@ __metadata:
   dependencies:
     safe-buffer: "npm:^5.0.1"
   checksum: 10c0/ebfbf19d4b8be938f4dd4a83b8788385da353d63307ede301a9252f9f7f88672e76f2191618fd8edfc2f24679236064176fab0b78131b161ee73daa37125408c
-  languageName: node
-  linkType: hard
-
-"eciesjs@npm:^0.4.10":
-  version: 0.4.16
-  resolution: "eciesjs@npm:0.4.16"
-  dependencies:
-    "@ecies/ciphers": "npm:^0.2.4"
-    "@noble/ciphers": "npm:^1.3.0"
-    "@noble/curves": "npm:^1.9.7"
-    "@noble/hashes": "npm:^1.8.0"
-  checksum: 10c0/b4f562f3811722844a0fe25ed7e0fcee755be070b611d918c5d672327c660a675dd9e32cb596c87be05dfdd48dcbef90bb2b855e6e3266f9354505adf9e111e4
   languageName: node
   linkType: hard
 
@@ -12181,6 +12241,16 @@ __metadata:
     engine.io-parser: "npm:~5.2.1"
     ws: "npm:~8.17.1"
   checksum: 10c0/845761163f8ea7962c049df653b75dafb6b3693ad6f59809d4474751d7b0392cbf3dc2730b8a902ff93677a91fd28711d34ab29efd348a8a4b49c6b0724021ab
+  languageName: node
+  linkType: hard
+
+"enquirer@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "enquirer@npm:2.4.1"
+  dependencies:
+    ansi-colors: "npm:^4.1.1"
+    strip-ansi: "npm:^6.0.1"
+  checksum: 10c0/43850479d7a51d36a9c924b518dcdc6373b5a8ae3401097d336b7b7e258324749d0ad37a1fcaa5706f04799baa05585cd7af19ebdf7667673e7694435fcea918
   languageName: node
   linkType: hard
 
@@ -14369,7 +14439,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-docker@npm:^2.0.0":
+"is-docker@npm:^2.0.0, is-docker@npm:^2.1.1":
   version: 2.2.1
   resolution: "is-docker@npm:2.2.1"
   bin:
@@ -14500,6 +14570,13 @@ __metadata:
   version: 1.0.1
   resolution: "is-obj@npm:1.0.1"
   checksum: 10c0/5003acba0af7aa47dfe0760e545a89bbac89af37c12092c3efadc755372cdaec034f130e7a3653a59eb3c1843cfc72ca71eaf1a6c3bafe5a0bab3611a47f9945
+  languageName: node
+  linkType: hard
+
+"is-obj@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "is-obj@npm:2.0.0"
+  checksum: 10c0/85044ed7ba8bd169e2c2af3a178cacb92a97aa75de9569d02efef7f443a824b5e153eba72b9ae3aca6f8ce81955271aa2dc7da67a8b720575d3e38104208cb4e
   languageName: node
   linkType: hard
 
@@ -14650,7 +14727,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-wsl@npm:^2.1.1":
+"is-wsl@npm:^2.1.1, is-wsl@npm:^2.2.0":
   version: 2.2.0
   resolution: "is-wsl@npm:2.2.0"
   dependencies:
@@ -15560,6 +15637,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json-schema-typed@npm:^7.0.3":
+  version: 7.0.3
+  resolution: "json-schema-typed@npm:7.0.3"
+  checksum: 10c0/b4a6d984dd91f9aba72df8768c5ced99e789b8e17b55ee24afb3a687ce55b70a7b3f4360cac67939e1ff98e136ca26f3aa530635c13ef371ae5edc48b69a65f6
+  languageName: node
+  linkType: hard
+
 "json-schema-typed@npm:^8.0.2":
   version: 8.0.2
   resolution: "json-schema-typed@npm:8.0.2"
@@ -15776,6 +15860,335 @@ __metadata:
   checksum: 10c0/e9de6cb49657b6fa70ba2d1448fd3d691a5c4370d8f7bbf1c2f64c24d461270f2117e1b0afe8cb3114f13bbd8e51de158c2a224953960331904e636a5e4c0f2a
   languageName: node
   linkType: hard
+
+"knowlify@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "knowlify@workspace:."
+  dependencies:
+    "@aws-sdk/client-s3": "npm:3.956.0"
+    "@aws-sdk/lib-storage": "npm:3.956.0"
+    "@aws-sdk/s3-presigned-post": "npm:3.956.0"
+    "@aws-sdk/s3-request-presigner": "npm:3.956.0"
+    "@aws-sdk/signature-v4-crt": "npm:^3.956.0"
+    "@babel/cli": "npm:^7.28.3"
+    "@babel/core": "npm:^7.28.5"
+    "@babel/plugin-proposal-decorators": "npm:^7.28.0"
+    "@babel/plugin-transform-class-properties": "npm:^7.27.1"
+    "@babel/preset-env": "npm:^7.28.5"
+    "@babel/preset-react": "npm:^7.28.5"
+    "@babel/preset-typescript": "npm:^7.28.5"
+    "@benrbray/prosemirror-math": "npm:^0.2.2"
+    "@bull-board/api": "npm:^6.7.10"
+    "@bull-board/koa": "npm:^6.13.0"
+    "@css-inline/css-inline-wasm": "npm:^0.18.0"
+    "@dnd-kit/core": "npm:^6.3.1"
+    "@dnd-kit/modifiers": "npm:^6.0.1"
+    "@dnd-kit/sortable": "npm:^7.0.2"
+    "@dotenvx/dotenvx": "npm:^1.75.1"
+    "@emoji-mart/data": "npm:^1.2.1"
+    "@faker-js/faker": "npm:^8.4.1"
+    "@fast-csv/parse": "npm:^5.0.5"
+    "@fortawesome/fontawesome-svg-core": "npm:^7.1.0"
+    "@fortawesome/free-brands-svg-icons": "npm:^7.1.0"
+    "@fortawesome/free-solid-svg-icons": "npm:^7.1.0"
+    "@fortawesome/react-fontawesome": "npm:^0.2.6"
+    "@getoutline/react-roving-tabindex": "npm:^3.2.4"
+    "@gitbeaker/rest": "npm:^43.8.0"
+    "@hocuspocus/extension-redis": "npm:1.1.2"
+    "@hocuspocus/extension-throttle": "npm:1.1.2"
+    "@hocuspocus/provider": "npm:1.1.2"
+    "@hocuspocus/server": "npm:1.1.2"
+    "@juggle/resize-observer": "npm:^3.4.0"
+    "@linear/sdk": "npm:^58.1.0"
+    "@mermaid-js/layout-elk": "npm:^0.2.0"
+    "@modelcontextprotocol/sdk": "npm:^1.25.1"
+    "@node-oauth/oauth2-server": "npm:^5.2.0"
+    "@notionhq/client": "npm:^2.3.0"
+    "@octokit/auth-app": "npm:^6.1.4"
+    "@octokit/webhooks": "npm:^13.9.1"
+    "@outlinewiki/koa-passport": "npm:^4.2.1"
+    "@outlinewiki/passport-azure-ad-oauth2": "npm:^0.1.0"
+    "@radix-ui/react-collapsible": "npm:^1.1.12"
+    "@radix-ui/react-context-menu": "npm:^2.2.16"
+    "@radix-ui/react-dialog": "npm:^1.1.15"
+    "@radix-ui/react-dropdown-menu": "npm:^2.1.16"
+    "@radix-ui/react-one-time-password-field": "npm:^0.1.8"
+    "@radix-ui/react-popover": "npm:^1.1.15"
+    "@radix-ui/react-select": "npm:^2.2.6"
+    "@radix-ui/react-switch": "npm:^1.2.6"
+    "@radix-ui/react-tabs": "npm:^1.1.13"
+    "@radix-ui/react-toolbar": "npm:^1.1.11"
+    "@radix-ui/react-tooltip": "npm:^1.2.8"
+    "@radix-ui/react-visually-hidden": "npm:^1.2.4"
+    "@relative-ci/agent": "npm:^4.3.1"
+    "@sentry/node": "npm:^7.120.4"
+    "@sentry/react": "npm:^7.120.4"
+    "@simplewebauthn/browser": "npm:^13.2.2"
+    "@simplewebauthn/server": "npm:^13.2.2"
+    "@tanstack/react-table": "npm:^8.21.3"
+    "@tanstack/react-virtual": "npm:^3.13.12"
+    "@types/addressparser": "npm:^1.0.3"
+    "@types/body-scroll-lock": "npm:^3.1.2"
+    "@types/cookie": "npm:0.6.0"
+    "@types/crypto-js": "npm:^4.2.2"
+    "@types/diff": "npm:^5.0.9"
+    "@types/dotenv": "npm:^8.2.3"
+    "@types/emoji-regex": "npm:^9.2.2"
+    "@types/escape-html": "npm:^1.0.4"
+    "@types/express-useragent": "npm:^1.0.5"
+    "@types/form-data": "npm:^2.5.2"
+    "@types/formidable": "npm:^2.0.6"
+    "@types/fs-extra": "npm:^11.0.4"
+    "@types/fuzzy-search": "npm:^2.1.5"
+    "@types/glob": "npm:^8.0.1"
+    "@types/google.analytics": "npm:^0.0.46"
+    "@types/invariant": "npm:^2.2.37"
+    "@types/ioredis-mock": "npm:^8.2.6"
+    "@types/jest": "npm:^29.5.14"
+    "@types/js-yaml": "npm:^4.0.9"
+    "@types/jsonwebtoken": "npm:^8.5.9"
+    "@types/katex": "npm:^0.16.7"
+    "@types/koa": "npm:^2.15.0"
+    "@types/koa-compress": "npm:^4.0.6"
+    "@types/koa-helmet": "npm:^6.0.8"
+    "@types/koa-logger": "npm:^3.1.5"
+    "@types/koa-mount": "npm:^4.0.5"
+    "@types/koa-router": "npm:^7.4.8"
+    "@types/koa-send": "npm:^4.1.6"
+    "@types/koa-sslify": "npm:^4.0.6"
+    "@types/koa-useragent": "npm:^2.1.2"
+    "@types/mailparser": "npm:^3.4.6"
+    "@types/markdown-it": "npm:^14.1.2"
+    "@types/markdown-it-container": "npm:^2.0.9"
+    "@types/markdown-it-emoji": "npm:^3.0.1"
+    "@types/mime-types": "npm:^3.0.1"
+    "@types/natural-sort": "npm:^0.0.24"
+    "@types/node": "npm:20.19.21"
+    "@types/node-fetch": "npm:^2.6.9"
+    "@types/nodemailer": "npm:^6.4.17"
+    "@types/pako": "npm:^2.0.4"
+    "@types/passport-oauth2": "npm:^1.8.0"
+    "@types/pluralize": "npm:^0.0.33"
+    "@types/png-chunks-extract": "npm:^1.0.2"
+    "@types/proxy-from-env": "npm:^1.0.4"
+    "@types/quoted-printable": "npm:^1.0.2"
+    "@types/react": "npm:17.0.75"
+    "@types/react-avatar-editor": "npm:^13.0.4"
+    "@types/react-dom": "npm:^17.0.11"
+    "@types/react-helmet": "npm:^6.1.11"
+    "@types/react-portal": "npm:^4.0.7"
+    "@types/react-router-dom": "npm:^5.3.3"
+    "@types/react-virtualized-auto-sizer": "npm:^1.0.8"
+    "@types/react-window": "npm:^1.8.8"
+    "@types/readable-stream": "npm:^4.0.22"
+    "@types/redis-info": "npm:^3.0.3"
+    "@types/refractor": "npm:^3.4.1"
+    "@types/resolve-path": "npm:^1.4.3"
+    "@types/sanitize-filename": "npm:^1.6.3"
+    "@types/semver": "npm:^7.7.0"
+    "@types/sequelize": "npm:^4.28.20"
+    "@types/slug": "npm:^5.0.7"
+    "@types/stoppable": "npm:^1.1.3"
+    "@types/styled-components": "npm:^5.1.32"
+    "@types/throng": "npm:^5.0.7"
+    "@types/tmp": "npm:^0.2.6"
+    "@types/utf8": "npm:^3.0.3"
+    "@types/validator": "npm:^13.15.3"
+    "@types/yauzl": "npm:^2.10.3"
+    "@vitejs/plugin-react-oxc": "npm:^0.2.3"
+    addressparser: "npm:^1.0.1"
+    async-sema: "npm:^3.1.1"
+    autotrack: "npm:^2.4.1"
+    babel-jest: "npm:^29.7.0"
+    babel-plugin-styled-components: "npm:^2.1.4"
+    babel-plugin-transform-inline-environment-variables: "npm:^0.4.4"
+    babel-plugin-transform-typescript-metadata: "npm:^0.4.0"
+    babel-plugin-tsconfig-paths-module-resolver: "npm:^1.0.4"
+    body-scroll-lock: "npm:^4.0.0-beta.0"
+    browserslist-to-esbuild: "npm:^1.2.0"
+    bull: "npm:^4.16.5"
+    class-validator: "npm:^0.14.3"
+    command-score: "npm:^0.1.2"
+    compressorjs: "npm:^1.2.1"
+    concurrently: "npm:^8.2.2"
+    content-disposition: "npm:^0.5.4"
+    cookie: "npm:^0.7.0"
+    copy-to-clipboard: "npm:^3.3.3"
+    core-js: "npm:^3.45.1"
+    crypto-js: "npm:^4.2.0"
+    date-fns: "npm:^3.6.0"
+    dd-trace: "npm:^5.82.0"
+    diff: "npm:^5.2.0"
+    discord-api-types: "npm:^0.38.36"
+    email-providers: "npm:^1.14.0"
+    emoji-mart: "npm:^5.6.0"
+    emoji-regex: "npm:^10.6.0"
+    es6-error: "npm:^4.1.1"
+    fast-deep-equal: "npm:^3.1.3"
+    fetch-retry: "npm:^5.0.6"
+    form-data: "npm:^4.0.5"
+    fractional-index: "npm:^1.0.0"
+    framer-motion: "npm:^6.5.1"
+    franc: "npm:^6.2.0"
+    fs-extra: "npm:^11.3.2"
+    fuzzy-search: "npm:^3.2.1"
+    glob: "npm:^8.1.0"
+    hot-shots: "npm:^12.1.0"
+    http-errors: "npm:2.0.1"
+    https-proxy-agent: "npm:^7.0.6"
+    husky: "npm:^8.0.3"
+    i18next: "npm:^22.5.1"
+    i18next-fs-backend: "npm:^2.6.1"
+    i18next-http-backend: "npm:^2.7.3"
+    i18next-parser: "npm:^8.13.0"
+    invariant: "npm:^2.2.4"
+    ioredis: "npm:^5.8.2"
+    ioredis-mock: "npm:^8.13.1"
+    ipaddr.js: "npm:^2.3.0"
+    is-printable-key-event: "npm:^1.0.0"
+    iso-639-3: "npm:^3.0.1"
+    jest-cli: "npm:^30.2.0"
+    jest-environment-jsdom: "npm:^29.7.0"
+    jest-fetch-mock: "npm:^3.0.3"
+    js-yaml: "npm:^4.1.1"
+    jsdom: "npm:^22.1.0"
+    jsonwebtoken: "npm:^9.0.0"
+    jszip: "npm:^3.10.1"
+    katex: "npm:^0.16.25"
+    kbar: "npm:0.1.0-beta.48"
+    koa: "npm:^3.0.3"
+    koa-body: "npm:^6.0.1"
+    koa-compress: "npm:^5.1.1"
+    koa-helmet: "npm:^6.1.0"
+    koa-logger: "npm:^3.2.1"
+    koa-mount: "npm:^4.2.0"
+    koa-router: "npm:7.4.0"
+    koa-send: "npm:5.0.1"
+    koa-sslify: "npm:5.0.1"
+    koa-useragent: "npm:^4.1.0"
+    lint-staged: "npm:^13.3.0"
+    lodash: "npm:^4.17.21"
+    mailparser: "npm:^3.7.4"
+    mammoth: "npm:^1.11.0"
+    markdown-it: "npm:^14.1.0"
+    markdown-it-container: "npm:^3.0.0"
+    markdown-it-emoji: "npm:^3.0.0"
+    mermaid: "npm:11.12.1"
+    mime-types: "npm:^3.0.1"
+    mobx: "npm:^4.15.4"
+    mobx-react: "npm:^6.3.1"
+    mobx-utils: "npm:^4.0.1"
+    natural-sort: "npm:^1.0.0"
+    node-fetch: "npm:2.7.0"
+    nodemailer: "npm:^7.0.11"
+    nodemon: "npm:^3.1.11"
+    octokit: "npm:^3.2.2"
+    outline-icons: "npm:^4.3.0"
+    oxlint: "npm:1.11.2"
+    oxlint-tsgolint: "npm:^0.1.6"
+    oy-vey: "npm:^0.12.1"
+    pako: "npm:^2.1.0"
+    passport: "npm:^0.7.0"
+    passport-google-oauth2: "npm:^0.2.0"
+    passport-oauth2: "npm:^1.8.0"
+    passport-slack-oauth2: "npm:^1.2.0"
+    patch-package: "npm:^8.0.1"
+    pg: "npm:^8.16.3"
+    pg-tsquery: "npm:^8.4.2"
+    pluralize: "npm:^8.0.0"
+    png-chunks-extract: "npm:^1.0.0"
+    polished: "npm:^4.3.1"
+    postinstall-postinstall: "npm:^2.1.0"
+    prettier: "npm:^3.6.2"
+    prosemirror-changeset: "npm:2.3.1"
+    prosemirror-codemark: "npm:^0.4.2"
+    prosemirror-commands: "npm:^1.7.1"
+    prosemirror-dropcursor: "npm:^1.8.2"
+    prosemirror-gapcursor: "npm:^1.4.0"
+    prosemirror-history: "npm:^1.5.0"
+    prosemirror-inputrules: "npm:^1.5.1"
+    prosemirror-keymap: "npm:^1.2.3"
+    prosemirror-markdown: "npm:^1.13.2"
+    prosemirror-model: "npm:^1.25.4"
+    prosemirror-schema-list: "npm:^1.5.1"
+    prosemirror-state: "npm:^1.4.4"
+    prosemirror-tables: "npm:^1.8.1"
+    prosemirror-transform: "npm:1.10.0"
+    prosemirror-view: "npm:^1.41.4"
+    proxy-from-env: "npm:^1.1.0"
+    query-string: "npm:^7.1.3"
+    rate-limiter-flexible: "npm:^2.4.2"
+    react: "npm:^17.0.2"
+    react-avatar-editor: "npm:^13.0.2"
+    react-colorful: "npm:^5.6.1"
+    react-day-picker: "npm:^8.10.1"
+    react-dnd: "npm:^16.0.1"
+    react-dnd-html5-backend: "npm:^16.0.1"
+    react-dom: "npm:^17.0.2"
+    react-dropzone: "npm:^11.7.1"
+    react-helmet-async: "npm:^2.0.5"
+    react-hook-form: "npm:^7.68.0"
+    react-i18next: "npm:^12.3.1"
+    react-merge-refs: "npm:^2.1.1"
+    react-portal: "npm:^4.3.0"
+    react-refresh: "npm:^0.18.0"
+    react-router-dom: "npm:^5.3.4"
+    react-use-measure: "npm:^2.1.7"
+    react-virtualized-auto-sizer: "npm:^1.0.26"
+    react-waypoint: "npm:^10.3.0"
+    react-window: "npm:^1.8.11"
+    react-zoom-pan-pinch: "npm:^3.7.0"
+    redlock: "npm:^5.0.0-beta.2"
+    reflect-metadata: "npm:^0.2.2"
+    refractor: "npm:^3.6.0"
+    request-filtering-agent: "npm:^3.2.0"
+    resolve-path: "npm:^1.4.0"
+    rimraf: "npm:^2.5.4"
+    rollup-plugin-webpack-stats: "npm:2.1.6"
+    sanitize-filename: "npm:^1.6.3"
+    scroll-into-view-if-needed: "npm:^3.1.0"
+    semver: "npm:^7.7.2"
+    sequelize: "npm:^6.37.7"
+    sequelize-cli: "npm:^6.6.3"
+    sequelize-encrypted: "npm:^1.0.0"
+    sequelize-strict-attributes: "npm:^1.0.2"
+    sequelize-typescript: "npm:^2.1.6"
+    slug: "npm:^5.3.0"
+    slugify: "npm:^1.6.6"
+    socket.io: "npm:^4.8.1"
+    socket.io-client: "npm:^4.8.1"
+    socket.io-redis: "npm:^6.1.1"
+    sonner: "npm:^1.7.4"
+    stoppable: "npm:^1.1.0"
+    string-replace-to-array: "npm:^2.1.1"
+    styled-components: "npm:^5.3.11"
+    styled-components-breakpoint: "npm:^2.1.1"
+    styled-normalize: "npm:^8.1.1"
+    terser: "npm:^5.44.1"
+    throng: "npm:^5.0.0"
+    tiny-cookie: "npm:^2.5.1"
+    tmp: "npm:^0.2.5"
+    tunnel-agent: "npm:^0.6.0"
+    typescript: "npm:^5.9.2"
+    ukkonen: "npm:^2.2.0"
+    umzug: "npm:^3.8.2"
+    utility-types: "npm:^3.11.0"
+    uuid: "npm:^11.1.0"
+    validator: "npm:13.15.22"
+    vaul: "npm:^1.1.2"
+    vite: "npm:rolldown-vite@7.3.0"
+    vite-plugin-pwa: "npm:1.0.3"
+    web-haptics: "npm:^0.0.6"
+    winston: "npm:^3.17.0"
+    ws: "npm:^7.5.10"
+    y-indexeddb: "npm:^9.0.11"
+    y-prosemirror: "npm:^1.3.7"
+    y-protocols: "npm:^1.0.6"
+    yauzl: "npm:^3.2.0"
+    yjs: "npm:^13.6.1"
+    zod: "npm:^4.2.1"
+  languageName: unknown
+  linkType: soft
 
 "koa-body@npm:^6.0.1":
   version: 6.0.1
@@ -16831,6 +17244,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mimic-fn@npm:^3.0.0":
+  version: 3.1.0
+  resolution: "mimic-fn@npm:3.1.0"
+  checksum: 10c0/a07cdd8ed6490c2dff5b11f889b245d9556b80f5a653a552a651d17cff5a2d156e632d235106c2369f00cccef4071704589574cf3601bc1b1400a1f620dff067
+  languageName: node
+  linkType: hard
+
 "mimic-fn@npm:^4.0.0":
   version: 4.0.0
   resolution: "mimic-fn@npm:4.0.0"
@@ -17566,6 +17986,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"open@npm:^8.4.2":
+  version: 8.4.2
+  resolution: "open@npm:8.4.2"
+  dependencies:
+    define-lazy-prop: "npm:^2.0.0"
+    is-docker: "npm:^2.1.1"
+    is-wsl: "npm:^2.2.0"
+  checksum: 10c0/bb6b3a58401dacdb0aad14360626faf3fb7fba4b77816b373495988b724fb48941cad80c1b65d62bb31a17609b2cd91c41a181602caea597ca80dfbcc27e84c9
+  languageName: node
+  linkType: hard
+
 "option@npm:~0.2.1":
   version: 0.2.4
   resolution: "option@npm:0.2.4"
@@ -17588,335 +18019,6 @@ __metadata:
   checksum: 10c0/e36330852526ac15973480aa4ce4bf82ee21bf54dbeb6b6a9b02bc5e03701a19e3f796fb38a077ad7cef7e3383ff020d4c6246013b656be80c8c97243f522fbb
   languageName: node
   linkType: hard
-
-"outline@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "outline@workspace:."
-  dependencies:
-    "@aws-sdk/client-s3": "npm:3.956.0"
-    "@aws-sdk/lib-storage": "npm:3.956.0"
-    "@aws-sdk/s3-presigned-post": "npm:3.956.0"
-    "@aws-sdk/s3-request-presigner": "npm:3.956.0"
-    "@aws-sdk/signature-v4-crt": "npm:^3.956.0"
-    "@babel/cli": "npm:^7.28.3"
-    "@babel/core": "npm:^7.28.5"
-    "@babel/plugin-proposal-decorators": "npm:^7.28.0"
-    "@babel/plugin-transform-class-properties": "npm:^7.27.1"
-    "@babel/preset-env": "npm:^7.28.5"
-    "@babel/preset-react": "npm:^7.28.5"
-    "@babel/preset-typescript": "npm:^7.28.5"
-    "@benrbray/prosemirror-math": "npm:^0.2.2"
-    "@bull-board/api": "npm:^6.7.10"
-    "@bull-board/koa": "npm:^6.13.0"
-    "@css-inline/css-inline-wasm": "npm:^0.18.0"
-    "@dnd-kit/core": "npm:^6.3.1"
-    "@dnd-kit/modifiers": "npm:^6.0.1"
-    "@dnd-kit/sortable": "npm:^7.0.2"
-    "@dotenvx/dotenvx": "npm:^1.51.2"
-    "@emoji-mart/data": "npm:^1.2.1"
-    "@faker-js/faker": "npm:^8.4.1"
-    "@fast-csv/parse": "npm:^5.0.5"
-    "@fortawesome/fontawesome-svg-core": "npm:^7.1.0"
-    "@fortawesome/free-brands-svg-icons": "npm:^7.1.0"
-    "@fortawesome/free-solid-svg-icons": "npm:^7.1.0"
-    "@fortawesome/react-fontawesome": "npm:^0.2.6"
-    "@getoutline/react-roving-tabindex": "npm:^3.2.4"
-    "@gitbeaker/rest": "npm:^43.8.0"
-    "@hocuspocus/extension-redis": "npm:1.1.2"
-    "@hocuspocus/extension-throttle": "npm:1.1.2"
-    "@hocuspocus/provider": "npm:1.1.2"
-    "@hocuspocus/server": "npm:1.1.2"
-    "@juggle/resize-observer": "npm:^3.4.0"
-    "@linear/sdk": "npm:^58.1.0"
-    "@mermaid-js/layout-elk": "npm:^0.2.0"
-    "@modelcontextprotocol/sdk": "npm:^1.25.1"
-    "@node-oauth/oauth2-server": "npm:^5.2.0"
-    "@notionhq/client": "npm:^2.3.0"
-    "@octokit/auth-app": "npm:^6.1.4"
-    "@octokit/webhooks": "npm:^13.9.1"
-    "@outlinewiki/koa-passport": "npm:^4.2.1"
-    "@outlinewiki/passport-azure-ad-oauth2": "npm:^0.1.0"
-    "@radix-ui/react-collapsible": "npm:^1.1.12"
-    "@radix-ui/react-context-menu": "npm:^2.2.16"
-    "@radix-ui/react-dialog": "npm:^1.1.15"
-    "@radix-ui/react-dropdown-menu": "npm:^2.1.16"
-    "@radix-ui/react-one-time-password-field": "npm:^0.1.8"
-    "@radix-ui/react-popover": "npm:^1.1.15"
-    "@radix-ui/react-select": "npm:^2.2.6"
-    "@radix-ui/react-switch": "npm:^1.2.6"
-    "@radix-ui/react-tabs": "npm:^1.1.13"
-    "@radix-ui/react-toolbar": "npm:^1.1.11"
-    "@radix-ui/react-tooltip": "npm:^1.2.8"
-    "@radix-ui/react-visually-hidden": "npm:^1.2.4"
-    "@relative-ci/agent": "npm:^4.3.1"
-    "@sentry/node": "npm:^7.120.4"
-    "@sentry/react": "npm:^7.120.4"
-    "@simplewebauthn/browser": "npm:^13.2.2"
-    "@simplewebauthn/server": "npm:^13.2.2"
-    "@tanstack/react-table": "npm:^8.21.3"
-    "@tanstack/react-virtual": "npm:^3.13.12"
-    "@types/addressparser": "npm:^1.0.3"
-    "@types/body-scroll-lock": "npm:^3.1.2"
-    "@types/cookie": "npm:0.6.0"
-    "@types/crypto-js": "npm:^4.2.2"
-    "@types/diff": "npm:^5.0.9"
-    "@types/dotenv": "npm:^8.2.3"
-    "@types/emoji-regex": "npm:^9.2.2"
-    "@types/escape-html": "npm:^1.0.4"
-    "@types/express-useragent": "npm:^1.0.5"
-    "@types/form-data": "npm:^2.5.2"
-    "@types/formidable": "npm:^2.0.6"
-    "@types/fs-extra": "npm:^11.0.4"
-    "@types/fuzzy-search": "npm:^2.1.5"
-    "@types/glob": "npm:^8.0.1"
-    "@types/google.analytics": "npm:^0.0.46"
-    "@types/invariant": "npm:^2.2.37"
-    "@types/ioredis-mock": "npm:^8.2.6"
-    "@types/jest": "npm:^29.5.14"
-    "@types/js-yaml": "npm:^4.0.9"
-    "@types/jsonwebtoken": "npm:^8.5.9"
-    "@types/katex": "npm:^0.16.7"
-    "@types/koa": "npm:^2.15.0"
-    "@types/koa-compress": "npm:^4.0.6"
-    "@types/koa-helmet": "npm:^6.0.8"
-    "@types/koa-logger": "npm:^3.1.5"
-    "@types/koa-mount": "npm:^4.0.5"
-    "@types/koa-router": "npm:^7.4.8"
-    "@types/koa-send": "npm:^4.1.6"
-    "@types/koa-sslify": "npm:^4.0.6"
-    "@types/koa-useragent": "npm:^2.1.2"
-    "@types/mailparser": "npm:^3.4.6"
-    "@types/markdown-it": "npm:^14.1.2"
-    "@types/markdown-it-container": "npm:^2.0.9"
-    "@types/markdown-it-emoji": "npm:^3.0.1"
-    "@types/mime-types": "npm:^3.0.1"
-    "@types/natural-sort": "npm:^0.0.24"
-    "@types/node": "npm:20.19.21"
-    "@types/node-fetch": "npm:^2.6.9"
-    "@types/nodemailer": "npm:^6.4.17"
-    "@types/pako": "npm:^2.0.4"
-    "@types/passport-oauth2": "npm:^1.8.0"
-    "@types/pluralize": "npm:^0.0.33"
-    "@types/png-chunks-extract": "npm:^1.0.2"
-    "@types/proxy-from-env": "npm:^1.0.4"
-    "@types/quoted-printable": "npm:^1.0.2"
-    "@types/react": "npm:17.0.75"
-    "@types/react-avatar-editor": "npm:^13.0.4"
-    "@types/react-dom": "npm:^17.0.11"
-    "@types/react-helmet": "npm:^6.1.11"
-    "@types/react-portal": "npm:^4.0.7"
-    "@types/react-router-dom": "npm:^5.3.3"
-    "@types/react-virtualized-auto-sizer": "npm:^1.0.8"
-    "@types/react-window": "npm:^1.8.8"
-    "@types/readable-stream": "npm:^4.0.22"
-    "@types/redis-info": "npm:^3.0.3"
-    "@types/refractor": "npm:^3.4.1"
-    "@types/resolve-path": "npm:^1.4.3"
-    "@types/sanitize-filename": "npm:^1.6.3"
-    "@types/semver": "npm:^7.7.0"
-    "@types/sequelize": "npm:^4.28.20"
-    "@types/slug": "npm:^5.0.7"
-    "@types/stoppable": "npm:^1.1.3"
-    "@types/styled-components": "npm:^5.1.32"
-    "@types/throng": "npm:^5.0.7"
-    "@types/tmp": "npm:^0.2.6"
-    "@types/utf8": "npm:^3.0.3"
-    "@types/validator": "npm:^13.15.3"
-    "@types/yauzl": "npm:^2.10.3"
-    "@vitejs/plugin-react-oxc": "npm:^0.2.3"
-    addressparser: "npm:^1.0.1"
-    async-sema: "npm:^3.1.1"
-    autotrack: "npm:^2.4.1"
-    babel-jest: "npm:^29.7.0"
-    babel-plugin-styled-components: "npm:^2.1.4"
-    babel-plugin-transform-inline-environment-variables: "npm:^0.4.4"
-    babel-plugin-transform-typescript-metadata: "npm:^0.4.0"
-    babel-plugin-tsconfig-paths-module-resolver: "npm:^1.0.4"
-    body-scroll-lock: "npm:^4.0.0-beta.0"
-    browserslist-to-esbuild: "npm:^1.2.0"
-    bull: "npm:^4.16.5"
-    class-validator: "npm:^0.14.3"
-    command-score: "npm:^0.1.2"
-    compressorjs: "npm:^1.2.1"
-    concurrently: "npm:^8.2.2"
-    content-disposition: "npm:^0.5.4"
-    cookie: "npm:^0.7.0"
-    copy-to-clipboard: "npm:^3.3.3"
-    core-js: "npm:^3.45.1"
-    crypto-js: "npm:^4.2.0"
-    date-fns: "npm:^3.6.0"
-    dd-trace: "npm:^5.82.0"
-    diff: "npm:^5.2.0"
-    discord-api-types: "npm:^0.38.36"
-    email-providers: "npm:^1.14.0"
-    emoji-mart: "npm:^5.6.0"
-    emoji-regex: "npm:^10.6.0"
-    es6-error: "npm:^4.1.1"
-    fast-deep-equal: "npm:^3.1.3"
-    fetch-retry: "npm:^5.0.6"
-    form-data: "npm:^4.0.5"
-    fractional-index: "npm:^1.0.0"
-    framer-motion: "npm:^6.5.1"
-    franc: "npm:^6.2.0"
-    fs-extra: "npm:^11.3.2"
-    fuzzy-search: "npm:^3.2.1"
-    glob: "npm:^8.1.0"
-    hot-shots: "npm:^12.1.0"
-    http-errors: "npm:2.0.1"
-    https-proxy-agent: "npm:^7.0.6"
-    husky: "npm:^8.0.3"
-    i18next: "npm:^22.5.1"
-    i18next-fs-backend: "npm:^2.6.1"
-    i18next-http-backend: "npm:^2.7.3"
-    i18next-parser: "npm:^8.13.0"
-    invariant: "npm:^2.2.4"
-    ioredis: "npm:^5.8.2"
-    ioredis-mock: "npm:^8.13.1"
-    ipaddr.js: "npm:^2.3.0"
-    is-printable-key-event: "npm:^1.0.0"
-    iso-639-3: "npm:^3.0.1"
-    jest-cli: "npm:^30.2.0"
-    jest-environment-jsdom: "npm:^29.7.0"
-    jest-fetch-mock: "npm:^3.0.3"
-    js-yaml: "npm:^4.1.1"
-    jsdom: "npm:^22.1.0"
-    jsonwebtoken: "npm:^9.0.0"
-    jszip: "npm:^3.10.1"
-    katex: "npm:^0.16.25"
-    kbar: "npm:0.1.0-beta.48"
-    koa: "npm:^3.0.3"
-    koa-body: "npm:^6.0.1"
-    koa-compress: "npm:^5.1.1"
-    koa-helmet: "npm:^6.1.0"
-    koa-logger: "npm:^3.2.1"
-    koa-mount: "npm:^4.2.0"
-    koa-router: "npm:7.4.0"
-    koa-send: "npm:5.0.1"
-    koa-sslify: "npm:5.0.1"
-    koa-useragent: "npm:^4.1.0"
-    lint-staged: "npm:^13.3.0"
-    lodash: "npm:^4.17.21"
-    mailparser: "npm:^3.7.4"
-    mammoth: "npm:^1.11.0"
-    markdown-it: "npm:^14.1.0"
-    markdown-it-container: "npm:^3.0.0"
-    markdown-it-emoji: "npm:^3.0.0"
-    mermaid: "npm:11.12.1"
-    mime-types: "npm:^3.0.1"
-    mobx: "npm:^4.15.4"
-    mobx-react: "npm:^6.3.1"
-    mobx-utils: "npm:^4.0.1"
-    natural-sort: "npm:^1.0.0"
-    node-fetch: "npm:2.7.0"
-    nodemailer: "npm:^7.0.11"
-    nodemon: "npm:^3.1.11"
-    octokit: "npm:^3.2.2"
-    outline-icons: "npm:^4.3.0"
-    oxlint: "npm:1.11.2"
-    oxlint-tsgolint: "npm:^0.1.6"
-    oy-vey: "npm:^0.12.1"
-    pako: "npm:^2.1.0"
-    passport: "npm:^0.7.0"
-    passport-google-oauth2: "npm:^0.2.0"
-    passport-oauth2: "npm:^1.8.0"
-    passport-slack-oauth2: "npm:^1.2.0"
-    patch-package: "npm:^8.0.1"
-    pg: "npm:^8.16.3"
-    pg-tsquery: "npm:^8.4.2"
-    pluralize: "npm:^8.0.0"
-    png-chunks-extract: "npm:^1.0.0"
-    polished: "npm:^4.3.1"
-    postinstall-postinstall: "npm:^2.1.0"
-    prettier: "npm:^3.6.2"
-    prosemirror-changeset: "npm:2.3.1"
-    prosemirror-codemark: "npm:^0.4.2"
-    prosemirror-commands: "npm:^1.7.1"
-    prosemirror-dropcursor: "npm:^1.8.2"
-    prosemirror-gapcursor: "npm:^1.4.0"
-    prosemirror-history: "npm:^1.5.0"
-    prosemirror-inputrules: "npm:^1.5.1"
-    prosemirror-keymap: "npm:^1.2.3"
-    prosemirror-markdown: "npm:^1.13.2"
-    prosemirror-model: "npm:^1.25.4"
-    prosemirror-schema-list: "npm:^1.5.1"
-    prosemirror-state: "npm:^1.4.4"
-    prosemirror-tables: "npm:^1.8.1"
-    prosemirror-transform: "npm:1.10.0"
-    prosemirror-view: "npm:^1.41.4"
-    proxy-from-env: "npm:^1.1.0"
-    query-string: "npm:^7.1.3"
-    rate-limiter-flexible: "npm:^2.4.2"
-    react: "npm:^17.0.2"
-    react-avatar-editor: "npm:^13.0.2"
-    react-colorful: "npm:^5.6.1"
-    react-day-picker: "npm:^8.10.1"
-    react-dnd: "npm:^16.0.1"
-    react-dnd-html5-backend: "npm:^16.0.1"
-    react-dom: "npm:^17.0.2"
-    react-dropzone: "npm:^11.7.1"
-    react-helmet-async: "npm:^2.0.5"
-    react-hook-form: "npm:^7.68.0"
-    react-i18next: "npm:^12.3.1"
-    react-merge-refs: "npm:^2.1.1"
-    react-portal: "npm:^4.3.0"
-    react-refresh: "npm:^0.18.0"
-    react-router-dom: "npm:^5.3.4"
-    react-use-measure: "npm:^2.1.7"
-    react-virtualized-auto-sizer: "npm:^1.0.26"
-    react-waypoint: "npm:^10.3.0"
-    react-window: "npm:^1.8.11"
-    react-zoom-pan-pinch: "npm:^3.7.0"
-    redlock: "npm:^5.0.0-beta.2"
-    reflect-metadata: "npm:^0.2.2"
-    refractor: "npm:^3.6.0"
-    request-filtering-agent: "npm:^3.2.0"
-    resolve-path: "npm:^1.4.0"
-    rimraf: "npm:^2.5.4"
-    rollup-plugin-webpack-stats: "npm:2.1.6"
-    sanitize-filename: "npm:^1.6.3"
-    scroll-into-view-if-needed: "npm:^3.1.0"
-    semver: "npm:^7.7.2"
-    sequelize: "npm:^6.37.7"
-    sequelize-cli: "npm:^6.6.3"
-    sequelize-encrypted: "npm:^1.0.0"
-    sequelize-strict-attributes: "npm:^1.0.2"
-    sequelize-typescript: "npm:^2.1.6"
-    slug: "npm:^5.3.0"
-    slugify: "npm:^1.6.6"
-    socket.io: "npm:^4.8.1"
-    socket.io-client: "npm:^4.8.1"
-    socket.io-redis: "npm:^6.1.1"
-    sonner: "npm:^1.7.4"
-    stoppable: "npm:^1.1.0"
-    string-replace-to-array: "npm:^2.1.1"
-    styled-components: "npm:^5.3.11"
-    styled-components-breakpoint: "npm:^2.1.1"
-    styled-normalize: "npm:^8.1.1"
-    terser: "npm:^5.44.1"
-    throng: "npm:^5.0.0"
-    tiny-cookie: "npm:^2.5.1"
-    tmp: "npm:^0.2.5"
-    tunnel-agent: "npm:^0.6.0"
-    typescript: "npm:^5.9.2"
-    ukkonen: "npm:^2.2.0"
-    umzug: "npm:^3.8.2"
-    utility-types: "npm:^3.11.0"
-    uuid: "npm:^11.1.0"
-    validator: "npm:13.15.22"
-    vaul: "npm:^1.1.2"
-    vite: "npm:rolldown-vite@7.3.0"
-    vite-plugin-pwa: "npm:1.0.3"
-    web-haptics: "npm:^0.0.6"
-    winston: "npm:^3.17.0"
-    ws: "npm:^7.5.10"
-    y-indexeddb: "npm:^9.0.11"
-    y-prosemirror: "npm:^1.3.7"
-    y-protocols: "npm:^1.0.6"
-    yauzl: "npm:^3.2.0"
-    yjs: "npm:^13.6.1"
-    zod: "npm:^4.2.1"
-  languageName: unknown
-  linkType: soft
 
 "own-keys@npm:^1.0.1":
   version: 1.0.1
@@ -18548,6 +18650,13 @@ __metadata:
   version: 4.0.3
   resolution: "picomatch@npm:4.0.3"
   checksum: 10c0/9582c951e95eebee5434f59e426cddd228a7b97a0161a375aed4be244bd3fe8e3a31b846808ea14ef2c8a2527a6eeab7b3946a67d5979e81694654f939473ae2
+  languageName: node
+  linkType: hard
+
+"picomatch@npm:^4.0.4":
+  version: 4.0.5
+  resolution: "picomatch@npm:4.0.5"
+  checksum: 10c0/947bc6b6e1ff1e6c5aaf95b107a0839d12802f4f7b867663f67d47accba939ca1cb582cf99dfc30438efa1c4648ac5990967e783e8929c36b03e8440704ef1bd
   languageName: node
   linkType: hard
 
@@ -21405,6 +21514,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"systeminformation@npm:^5.22.11":
+  version: 5.33.1
+  resolution: "systeminformation@npm:5.33.1"
+  bin:
+    systeminformation: lib/cli.js
+  checksum: 10c0/7a0a400db03539fa2163033eba8dbb04f3c2c6357b9e8720dd5abef8a20d6a7b85b943b3fe028bbfa0e9d01b8982e658bedb7c5e200eabdf2546beb002872f8e
+  conditions: (os=darwin | os=linux | os=win32 | os=freebsd | os=openbsd | os=netbsd | os=sunos | os=android)
+  languageName: node
+  linkType: hard
+
 "tar@npm:^7.5.2":
   version: 7.5.2
   resolution: "tar@npm:7.5.2"
@@ -22012,6 +22131,13 @@ __metadata:
   version: 7.16.0
   resolution: "undici-types@npm:7.16.0"
   checksum: 10c0/3033e2f2b5c9f1504bdc5934646cb54e37ecaca0f9249c983f7b1fc2e87c6d18399ebb05dc7fd5419e02b2e915f734d872a65da2e3eeed1813951c427d33cc9a
+  languageName: node
+  linkType: hard
+
+"undici@npm:^7.11.0":
+  version: 7.29.0
+  resolution: "undici@npm:7.29.0"
+  checksum: 10c0/85ea96e91e7f3de24de678cbbc54230fdd641a3b0643005f2aef044af1f1a2db8fbecb88b28e6fa78bb41ffeafda4479b57075b6b6ab92beac4b7b5ab53f9b10
   languageName: node
   linkType: hard
 
@@ -23380,6 +23506,22 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: 10c0/dceb44c28578b31641e13695d200d34ec4ab3966a5729814d5445b194933c096b7ced71494ce53a0e8820685d1d010df8b2422e5bf2cdea7e469d97ffbea306f
+  languageName: node
+  linkType: hard
+
+"yocto-spinner@npm:^1.1.0":
+  version: 1.2.2
+  resolution: "yocto-spinner@npm:1.2.2"
+  dependencies:
+    yoctocolors: "npm:^2.1.1"
+  checksum: 10c0/d1cf681e3057884d038bbafc568e572baba03f52ef1c435e3de1a2fef6d7aff671d44eeb9452315e5322a638e0c9b6de22be3d81539f9e4234725e49eb75a015
+  languageName: node
+  linkType: hard
+
+"yoctocolors@npm:^2.1.1":
+  version: 2.2.0
+  resolution: "yoctocolors@npm:2.2.0"
+  checksum: 10c0/ca179aa83401aa0711f268fda38145a44c828e612a5f5265439efb5796cd63c46ca6b786bae3b74c75440a48518c36b5b23cba7fbb76ea8af5a9f85f830a5754
   languageName: node
   linkType: hard
 
